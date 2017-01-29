@@ -12,6 +12,19 @@
 			font-weight: bold;
 			border: 1px solid #4387fd;
 		}
+		.btn2 {
+			padding: 16px;
+			line-height: 7px;
+			border-radius: 2px;
+			background: #f1f1f1;
+			color: #757575;
+			font-weight: bold;
+			border: 1px
+		}
+		.btn2:hover {
+			background: #dcdcd5;
+			color: #252522;
+		}
 		.text {
 			font-family: arial,sans-serif;
 			}	
@@ -20,28 +33,90 @@
 			margin: 0 10px;
 			font-size: 13px;
 		}
+		.netpodcherk2 {
+			text-decoration: none;
+			margin: 0 10px;
+			font-size: 13px;
+		}
+		.netpodcherk2:hover {
+			text-decoration: underline;
+		}
 		.a1 {
 			color: white;
 		}
+		.a2 {
+			color: #000;
+		}
+		.a2:hover {
+			text-decoration: underline;
+		}
+		.input1 {
+			min-height: 35px;
+			box-shadow: 0.3em 0.3em 10px rgba(122,122,122,0.5);
+		}
+		.div1 {
+			font-size: 10pt;
+			margin-top: 20px;
+		}
+		.div2 {
+			font-size: 10pt;
 		
+		}
+		#footer {
+			position: absolute;
+			bottom: 0;
+			background: #f2f2f2;
+    		border-top: 1px solid #e4e4e4;
+    		line-height: 40px;
+    		min-width: 1350px;
+		}
+		.left {
+		    padding-left: 27px;
+		}
 	</style>
 </head>
 <body class="text">
 		<div align="right">
-				<a class="netpodcherk" href="https://mail.Google.com">Почта</a>
-				<a class="netpodcherk" href="https://www.google.com.ua/imghp">Картинки</a>
+				<a class="netpodcherk a2" href="https://mail.Google.com">Почта</a>
+				<a class="netpodcherk a2" href="https://www.google.com.ua/imghp">Картинки</a>
 				<a href="https://www.google.com.ua/intl/ru/options"><img src="D:\Front End\Projects\Google\image_options.png"></a>
 			<button class="btn netpodcherk">
 				<a class="netpodcherk a1" href="https://accounts.google.com/ServiceLogin">Войти</a>
 			</button>
 		</div>
-		<img style="margin-left:540px; margin-top:160px; position:absolute;"  src="D:\Front End\Projects\Google\google.png" width="272" height="92" alt="GOOGLE" />
-		<form name="google" style="margin-left:440px; margin-top:280px; position:absolute;" id="searchbox" action="https://www.google.com">
- 			<input name="q" type="text" size="60" />
-		</form>
 		<div>
-			
+			<img style="margin-left:540px; margin-top:160px; position:absolute;"  src="D:\Front End\Projects\Google\google.png" width="272" height="92" alt="GOOGLE" />
+			<form name="google" style="margin-left:390px; margin-top:280px; position:absolute;" action="https://www.google.com">
+ 				<input class="input1" name="q" type="text" size="80px"  />
+			</form>
+			<center>
+				<button class="btn2" style="margin-top:360px">Поиск в Google</button>
+				<button class="btn2" style="margin-top:360px">
+					<a class="netpodcherk" href="https://www.google.com/doodles">Мне повезёт!</a> 
+				</button>
+				<div class="div1">
+				Google.com.ua предлагается на:
+				<a class="netpodcherk2" href="https://www.google.com.ua/">українська</a>
+				</div>
+			</center>
 		</div>
+		<div class="div2" id="footer">
+			<a class="left a2 netpodcherk" href="https://www.google.com.ua/intl/ru/ads/?fg=1">Реклама</a>
+			<a class="left a2 netpodcherk" href="https://www.google.com.ua/services/?fg=1#?modal_active=none">Для бизнеса</a>
+			<a class="left a2 netpodcherk" href="https://www.google.com.ua/intl/ru/about/">Все о Google</a>
+			<a class="left a2 netpodcherk" href="https://www.google.com.ua/intl/ru/policies/privacy/?fg=1">Конфиденциальность</a>
+			<a class="left a2 netpodcherk" href="https://www.google.com.ua/intl/ru/policies/terms/regional.html">Условия</a>
+			<a class="left a2 netpodcherk" href="https://www.google.com.ua/preferences?hl=ru-UA&fg=1" >Настройки
+					
+						<!-- <a href="https://www.google.com.ua/preferences?hl=ru-UA&fg=1">Настройка поиска</a>
+						<a href="https://www.google.com.ua/advanced_search?hl=ru-UA&fg=1">Расширеный поиск</a>
+						<a href="https://www.google.com.ua/history/optout?hl=ru-UA&fg=1">История</a>
+						<a href="https://support.google.com/websearch/?visit_id=0-636213243775597617-1624329526&hl=ru-UA&rd=2#topic=3378866">Справка по поиску</a>
+						<a>Отправить отзыв</a> -->
+					
+			</a>
+		</div>
+		
 </body>
 </html>
 
